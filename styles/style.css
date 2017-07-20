@@ -1,3 +1,26 @@
-body {
-  background-color: red;
+hr {
+  width: 100px;
+  height: 5px;
+  background-color: lightblue;
+}
+
+.about-me-contact-info {
+  padding-left: 10px;
+}
+
+.skills {
+  background-color: #1a1e23;
+  color: white;
+}
+
+section {
+  padding: 120px 0 100px;
+}
+
+.skill-bars {
+  padding-top: 40px;
+}
+
+.more-skills {
+  padding-top: 40px;
 }

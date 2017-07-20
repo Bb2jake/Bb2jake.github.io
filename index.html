@@ -1,14 +1,188 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
     <link rel="stylesheet" href="styles/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
     <title>Jake Pogue</title>
 </head>
+
 <body>
-    <h1>Hello</h1>
-    <h2>Test</h2>
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-header-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                </button>
+                <a href="#" class="navbar-brand">
+                    <p>Jake Pogue</p>
+                </a>
+            </div>
+
+            <div class="collapse navbar-collapse navbar-right" id="navbar-header-collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Home<span class="sr-only">(current)</span></a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Skills</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Resume</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <section class="about-me">
+            <div class="about-me-title text-center">
+                <h1>ABOUT ME</h1>
+                <!--  HR Tag for placeholder break. Change.  -->
+                <hr>
+            </div>
+            <div class="about-me-row row">
+                <div class="col-xs-12 col-md-4 about-me-profile">
+                    <img src="assets/me.png" alt="A picture of me" class="about-me-portrait">
+                    <div class="about-me-contact-info">
+                        <p><strong>Name:</strong> Jake Pogue</p>
+                        <p><strong>Phone:</strong> (509) 460 9449</p>
+                        <p><strong>Email:</strong> <a href="">bb2jake@gmail.com</a></p>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-8 about-me-text-container">
+                    <div class="about-me-objective">
+                        <h3>Objective</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae at accusantium delectus ratione nulla,
+                            ducimus vero ab voluptatum aspernatur consequuntur deserunt amet molestias totam. Dignissimos
+                            doloremque odit, accusamus omnis natus explicabo ducimus, quibusdam deleniti necessitatibus,
+                            assumenda magnam! Iusto numquam aliquid, pariatur sunt tempore sapiente! Reprehenderit praesentium
+                            enim numquam est voluptatibus!
+                        </p>
+                    </div>
+                    <div class="about-me-more">
+                        <h3>What I do</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla, quas.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="container-fluid">
+         <section class="skills">
+            <div class="skills-title text-center">
+                <h1>Skills</h1>
+                <hr>
+            </div>
+            <div class="skills-row row">
+                <div class="skill-bars">
+                    <div class="col-xs-12 col-md-6">
+                        <div class="skill-bars-left-row">
+                            <div class="skill-bar col-xs-12">
+                                <div class="skill-bar-text col-xs-3">
+                                    <p>Javascript</p>
+                                </div>
+                                <div class="skill-bar-bar col-xs-9">
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+                                            <span>60%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-bar col-xs-12">
+                                <div class="skill-bar-text col-xs-3">
+                                    <p>Javascript</p>
+                                </div>
+                                <div class="skill-bar-bar col-xs-9">
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+                                            <span>60%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-bar col-xs-12">
+                                <div class="skill-bar-text col-xs-3">
+                                    <p>Javascript</p>
+                                </div>
+                                <div class="skill-bar-bar col-xs-9">
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+                                            <span>60%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-6">
+                        <div class="skill-bars-right-row">
+                            <div class="skill-bar col-xs-12">
+                                <div class="skill-bar-text col-xs-3">
+                                    <p>Javascript</p>
+                                </div>
+                                <div class="skill-bar-bar col-xs-9">
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+                                            <span>60%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-bar col-xs-12">
+                                <div class="skill-bar-text col-xs-3">
+                                    <p>Javascript</p>
+                                </div>
+                                <div class="skill-bar-bar col-xs-9">
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+                                            <span>60%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-bar col-xs-12">
+                                <div class="skill-bar-text col-xs-3">
+                                    <p>Javascript</p>
+                                </div>
+                                <div class="skill-bar-bar col-xs-9">
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+                                            <span>60%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="more-skills">
+                    <div class="more-skills-title text-center">
+                        <h3>More skills</h3>
+                    </div>
+                    <!-- <div class="col-xs-6 col-sm-4 col-md-2">
+                        <div class="chart" data-percent="65" data-color="e74c3c">
+                            <span class="percent">
+                            "65"
+                            ::after
+                        </span>
+                            <div class="chart-text">
+                                <span>Bootstrap</span>
+                            </div>
+                            <canvas height="140" width="140">
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </section>
+    </div>
 </body>
+
 </html>
