@@ -12,6 +12,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
         crossorigin="anonymous"></script>
     <script type="text/javascript" src="js/jquery.easypiechart.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
 
     <title>Jake Pogue</title>
 </head>
@@ -34,14 +35,21 @@
             <div class="collapse navbar-collapse navbar-right" id="navbar-header-collapse">
                 <ul class="nav navbar-nav">
                     <li class="active"><a href="#">Home<span class="sr-only">(current)</span></a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Skills</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Resume</a></li>
+                    <li><a href="#about-me">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="/resume">Resume</a></li>
                 </ul>
             </div>
         </div>
     </nav>
+    <section class="home text-center" style="height: 760px; background-position: 50% 0px;">
+        <div class="intro">
+            <h3>Jake Pogue</h3>
+            <h1>Full Stack <span>Developer</span></h1>
+            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
+        </div>
+    </section>
     <div class="container">
         <section class="about-me">
             <div class="about-me-title text-center">
@@ -76,8 +84,8 @@
             </div>
         </section>
     </div>
-    <div class="container-fluid">
-        <section class="skills">
+    <section class="skills">
+        <div class="container">
             <div class="skills-title text-center">
                 <h1>Skills</h1>
                 <hr>
@@ -165,26 +173,88 @@
                         </div>
                     </div>
                 </div>
-                <div class="more-skills">
-                    <div class="more-skills-title text-center">
-                        <h3>More skills</h3>
-                    </div>
-                    <!-- <div class="col-xs-6 col-sm-4 col-md-2">
+            </div>
+            <div class="more-skills">
+                <div class="more-skills-title text-center">
+                    <h3>More skills</h3>
+                </div>
+                <div class="more-skills-row row">
+                    <div class="col-xs-6 col-sm-4 col-md-2">
                         <div class="chart" data-percent="65" data-color="e74c3c">
                             <span class="percent">
-                            "65"
-                            ::after
-                        </span>
-                            <div class="chart-text">
+                            <!-- "65"
+                            ::after -->
+                            </span>
+                            <canvas height="140" width="140"></canvas>
+                            <div class="chart-text text-center">
                                 <span>Bootstrap</span>
                             </div>
-                            <canvas height="140" width="140">
                         </div>
-                    </div> -->
+                    </div>
+                    <div class="col-xs-6 col-sm-4 col-md-2">
+                        <div class="chart" data-percent="65" data-color="e74c3c">
+                            <span class="percent">
+                            <!-- "65"
+                            ::after -->
+                            </span>
+                            <canvas height="140" width="140"></canvas>
+                            <div class="chart-text text-center">
+                                <span>Bootstrap</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-sm-4 col-md-2">
+                        <div class="chart" data-percent="65" data-color="e74c3c">
+                            <span class="percent">
+                            <!-- "65"
+                            ::after -->
+                            </span>
+                            <canvas height="140" width="140"></canvas>
+                            <div class="chart-text text-center">
+                                <span>Bootstrap</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-sm-4 col-md-2">
+                        <div class="chart" data-percent="65" data-color="e74c3c">
+                            <span class="percent">
+                            <!-- "65"
+                            ::after -->
+                            </span>
+                            <canvas height="140" width="140"></canvas>
+                            <div class="chart-text text-center">
+                                <span>Bootstrap</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-sm-4 col-md-2">
+                        <div class="chart" data-percent="65" data-color="e74c3c">
+                            <span class="percent">
+                            <!-- "65"
+                            ::after -->
+                            </span>
+                            <canvas height="140" width="140"></canvas>
+                            <div class="chart-text text-center">
+                                <span>Bootstrap</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-sm-4 col-md-2">
+                        <div class="chart" data-percent="65" data-color="e74c3c">
+                            <span class="percent">
+                            <!-- "65"
+                            ::after -->
+                            </span>
+                            <canvas height="140" width="140"></canvas>
+                            <div class="chart-text text-center">
+                                <span>Bootstrap</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </section>
-    </div>
+        </div>
+    </section>
 </body>
 
 </html>
