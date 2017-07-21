@@ -1,7 +1,14 @@
 hr {
   width: 100px;
   height: 5px;
+}
+
+.skills hr {
   background-color: lightblue;
+}
+
+.portfolio hr {
+  background-color: red;
 }
 
 .about-me-contact-info {
@@ -64,7 +71,7 @@ section {
   top: 50%;
   left: 0;
   text-align: center;
-  transform: translate(0%, -50%);
+  transform: translate(0%, -100%);
   padding: 0 15px;
 }
 
@@ -77,4 +84,9 @@ section {
 
 .intro h1 span {
   color: #68c3a3;
+}
+
+.portfolio-img {
+  padding-bottom: 15px;
+  overflow: hidden;
 }
