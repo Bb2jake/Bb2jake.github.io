@@ -1,38 +1,3 @@
-// jQuery(function($) {
-//     $('.more-skill').bind('inview', function(event, visible, visiblePartX, visiblePartY) {
-//         if (visible) {
-//             $('.chart').easyPieChart({
-//                 //your configuration goes here
-//                 easing: 'easeOut',
-//                 delay: 3000,
-//                 barColor:'#68c3a3',
-//                 trackColor:'rgba(255,255,255,0.2)',
-//                 scaleColor: false,
-//                 lineWidth: 8,
-//                 size: 140,
-//                 animate: 2000,
-//                 onStep: function(from, to, percent) {
-//                     this.el.children[0].innerHTML = Math.round(percent);
-//                 }
-
-//             });
-//             $(this).unbind('inview');
-//         }
-//     });
-// })
-
-console.log("loaded");
-
-(function () {
-    $('a[href*="#"]').bind("click", function (e) {
-        var anchor = $(this);
-        $('html, body').stop().animate({
-            scrollTop: $(anchor.attr('href')).offset().top
-        }, 1000);
-        e.preventDefault();
-    });
-}());
-
 function scrollNav() {
     $('.nav a').click(function () {
         //Toggle Class
@@ -49,3 +14,28 @@ function scrollNav() {
     $('.scrollTop a').scrollTop();
 }
 scrollNav();
+Chart.defaults.global.legend.display = false;
+var ctx = document.getElementById("myChart").getContext('2d');
+var myChart = new Chart(ctx, {
+    type: 'doughnut',
+    data: {
+        backgroundColor: 'rgba(0, 0, 0, 1)',
+        borderColor: 'red',
+        datasets: [{
+            backgroundColor: [
+                'red',
+                'white'
+            ],
+            data: [70, 30]
+        }],
+        borderWidth: [100, 100]
+    },
+    options: {
+        events: [],
+        cutoutPercentage: 70,
+        animation: {
+            animateRotate: false,
+            animateScale: false
+        }
+    }
+})
