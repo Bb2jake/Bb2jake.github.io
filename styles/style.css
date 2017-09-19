@@ -120,7 +120,6 @@ section {
   filter: alpha(opacity=0);
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
-  cursor: pointer;
   overflow: hidden;
 }
 
@@ -184,4 +183,8 @@ section {
 .thumb > img {
   height: 100%;
   width: 100%;
+}
+
+.portfolio-buttons span {
+  cursor: pointer;
 }
