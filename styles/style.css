@@ -180,3 +180,8 @@ section {
 .portfolio.gutter .portfolio-item {
   padding: 20px;
 }
+
+.thumb > img {
+  height: 100%;
+  width: 100%;
+}
