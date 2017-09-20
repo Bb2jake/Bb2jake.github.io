@@ -7,13 +7,21 @@ hr {
   background-color: lightblue;
 }
 
-.portfolio hr, #contact-me hr {
+.portfolio hr, #contact-me hr, .about-me hr {
   background-color: red;
 }
 
 .skills {
-  background-color: #1a1e23;
   color: white;
+}
+
+.skills {
+  background: linear-gradient(black, #1a1e23);
+}
+
+.about-me-profile > div {
+  box-shadow: 0 0 5px black;
+  margin-left: 10px;
 }
 
 section {
@@ -36,10 +44,15 @@ section {
   background-clip: initial;
   background-color: #222;
   color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .chart {
+  height: 140px;
   width: 140px;
+  margin-bottom: 40px;
 }
 
 .chart-text span {
@@ -58,13 +71,7 @@ section {
 }
 
 .intro {
-  position: absolute;
-  width: 100%;
-  top: 50%;
-  left: 0;
-  text-align: center;
-  transform: translate(0%, -100%);
-  padding: 0 15px;
+  z-index: 100;
 }
 
 .intro h1 {
