@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="styles/style.css">
+	<title>Document</title>
+</head>
+
+<body>
+	<section id="contact-me">
+		<div class="contact-me-title text-center">
+			<h1>Contact Me</h1>
+			<hr>
+		</div>
+		<form action="https://formspree.io/bb2jake@gmail.com" method="POST" class="form-horizontal" id="contact_form">
+			<div class="form-group">
+				<label class="col-md-4 control-label" for="email">Email</label>
+				<div class="col-md-5">
+					<input id="email" name="email" type="email" placeholder="Enter your email address here" class="form-control input-md" required>
+				</div>
+			</div>
+			<div class="form-group">
+				<label class="col-md-4 control-label" for="msg">Message</label>
+				<div class="col-md-4">
+					<textarea class="form-control" id="msg" name="message" rows="6" required></textarea>
+				</div>
+			</div>
+			<div class="form-group">
+				<label class="col-md-4 control-label" for="submit"></label>
+				<div class="col-md-4">
+					<button id="submit" name="submit" class="btn btn-primary">Send Message</button>
+				</div>
+			</div>
+		</form>
+	</section>
+
+</body>
+
+</html>
