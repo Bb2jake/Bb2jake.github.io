@@ -1,5 +1,9 @@
+$('.navbar-collapse a').on('click', function(){
+    $('#navbar-header-collapse').collapse('hide');
+});
+
 function scrollNav() {
-	$('.nav a').click(function () {
+	$('.navbar a').click(function () {
 		//Toggle Class
 		$(".active").removeClass("active");
 		$(this).closest('li').addClass("active");
